@@ -150,6 +150,7 @@ while true; do
     echo -e Refreshed on'\t'"${green}$(date)${nc}"
     echo -e Expires on'\t'"${red}$(date --date="$expires_at")${nc}"
     echo -e "\n${green}This script will need to remain active to use port forwarding, and will refresh every 15 minutes.${nc}\n"
+    echo -e "$port" > /tmp/pia-port
 
     # sleep 15 minutes
     sleep 900
